@@ -166,7 +166,7 @@ p {
   position: relative;
 }
 .card-front__background {
-  background-image: url("/galinka-bride/img/view-cocktail-beverage-glass-with-abstract-neo-futuristic-set.png");
+  background-image: url("/img/view-cocktail-beverage-glass-with-abstract-neo-futuristic-set.png");
   position: absolute;
   background-size: 100% 100%;
   left: 45%;
@@ -229,7 +229,7 @@ p {
 }
 .card-back {
   background-color: black;
-  background-image: url("/galinka-bride/img/glasses-wine-hand-drawn-pattern.png");
+  background-image: url("/img/glasses-wine-hand-drawn-pattern.png");
   background-size: 100% 100%;
   color: #fff;
   border: 1px solid #f6d0d6;
