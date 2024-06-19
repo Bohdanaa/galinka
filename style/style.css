@@ -253,4 +253,15 @@ p {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .card__title-number {
+    font-size: 50px;
+  }
+  .card__title-word {
+    font-size: 20px;
+  }
+  .card-front__background {
+    top: -45%;
+    left: 33%;
+    z-index: -10;
+  }
 }/*# sourceMappingURL=style.css.map */

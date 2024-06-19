@@ -83,7 +83,7 @@
 			position: relative;
 		}
 		&__background{
-			background-image: url('/img/view-cocktail-beverage-glass-with-abstract-neo-futuristic-set.png');
+			background-image: url("/img/view-cocktail-beverage-glass-with-abstract-neo-futuristic-set.png");
 			position: absolute;
 			background-size: 100% 100%;
 			left: 45%;
@@ -175,5 +175,18 @@ p{
 	.container{
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+	.card__title{
+		&-number{
+			font-size: 50px;
+		}
+		&-word{
+			font-size: 20px;
+		}
+	}
+	.card-front__background{
+		top:-45%;
+		left:33%;
+		z-index: -10;
 	}
 }
