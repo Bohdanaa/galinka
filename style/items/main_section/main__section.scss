@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+.container {
+	margin: 0 auto;
+	max-width: 1440px;
+	padding-left: 50px;
+	padding-right: 50px;
+	width: 100%;
+
+	&__1200{
+		max-width: 1300px;
+	}
+}
+.main{
+	&__section{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-top: 80px;
+		
+	}
+}
+.card {
+	width: 600px;
+	height: 600px;
+	perspective: 1000px;
+
+	&-inner{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		transform-style: preserve-3d;
+		transition: transform 0.999s;
+		
+	}
+	&:hover .card-inner{
+		transform: rotateY(180deg);
+	}
+	&-front, &-back{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+	}
+	&-flex-column{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		
+		&__center{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+	}
+
+	&-30{
+		width: 30%;
+	}
+	&-20{
+		width: 20%;
+	}
+	&-flex-row{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+	}
+	&-front{
+		background-color: #ebeae8;
+		color: black;
+		border: 1px solid black;
+		border-radius: 10px;
+		font-size: 24px;
+		transform: rotateY(0deg);
+		overflow: hidden;
+
+		&__about{
+			position: relative;
+		}
+		&__background{
+			background-image: url('/galinka-bride/img/view-cocktail-beverage-glass-with-abstract-neo-futuristic-set.png');
+			position: absolute;
+			background-size: 100% 100%;
+			left: 45%;
+			width: 400px;
+			height: 600px;
+		}
+		&__fone::before{
+			content: " ";
+			background-image: url('/galinka-bride/img/fone.png');
+			position: absolute;
+			background-size: 100% 100%;
+			top: -20%;
+			left: -20%;
+			width: 400px;
+			height: 400px;
+			z-index: -10;
+		}
+		&-text{
+			font-weight: bold;
+			font-size: 20px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			&__small{
+				font-size: 12px;
+				font-style: italic;
+			}
+			&__uppercase{
+				text-transform: uppercase;
+			}
+		}
+	}
+	&-border{
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		padding: 10px;
+		margin: 20px;
+
+		&-50{
+			border-top: 1px solid $cherub;
+			border-bottom: 1px solid $cherub;
+		}
+	}
+	&__title{
+		position: relative;
+		&-word{
+			font-family: "Comfortaa", sans-serif;
+			font-size: 30px;
+			color: black;
+		}
+		&-number{
+			font-family: 'Anton', sans-serif;
+			text-transform: uppercase;
+			font-size: 80px;
+			font-weight: bolder;
+			&s{
+				font-family: 'Anton', sans-serif;
+				text-transform: uppercase;
+				font-size: 40px;
+				font-weight: bolder;
+			}
+		}
+
+		
+	}
+	&-back{
+		background-color: black;
+		background-image: url("/galinka-bride/img/glasses-wine-hand-drawn-pattern.png");
+		background-size: 100% 100%;
+		color: #fff;
+		border: 1px solid $cherub;
+		border:1px solid white;
+		border-radius: 10px;
+		font-size: 24px;
+		transform: rotateY(180deg);
+	}
+}
+.wish{
+	&__img{
+		width: 80%;
+	}
+}
+p{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+@media all and (min-width: 300px) and (max-width: 640px){
+
+	.container{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
